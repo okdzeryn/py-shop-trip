@@ -19,7 +19,7 @@ class Shop:
         print("You have bought:")
         for product, quantity in cart.items():
             total_product_price = self.products[product] * quantity
-            if total_product_price.is_integer():
+            if total_product_price == int(total_product_price):
                 print(f"{quantity} {product}s for"
                       f" {int(total_product_price)} dollars")
             else:
