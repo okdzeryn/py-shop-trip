@@ -66,7 +66,8 @@ def shop_trip() -> None:
             # Print the receipt with the correct date format
             print(
                 f"Date: "
-                f"{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}")
+                f"{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}"
+            )
             chosen_shop.print_receipt(customer.name,
                                       customer.product_cart, cart_cost)
 
